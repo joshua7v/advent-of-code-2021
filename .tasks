@@ -1,0 +1,6 @@
+[project-run]
+command=npm start 
+cwd=$(VIM_ROOT)
+output=quickfix
+errorformat=%f:%l:%m
+save=1
