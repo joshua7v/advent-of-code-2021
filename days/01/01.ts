@@ -1,11 +1,11 @@
-import { getInput } from '../../utils'
+import { getInput } from '../../utils';
 
 function part1() {
-  const data = getInput();
+  const data = getInput().map(Number);
 
   let count = 0;
   for (let i = 1; i < data.length; i++) {
-    if (data[i] > data[i -1]) {
+    if (data[i] > data[i - 1]) {
       count++;
     }
   }
@@ -14,7 +14,7 @@ function part1() {
 }
 
 function part2() {
-  const data = getInput();
+  const data = getInput().map(Number);
 
   let _data = [];
   for (let i = 0; i < data.length; i++) {
@@ -26,7 +26,7 @@ function part2() {
 
   let count = 0;
   for (let i = 1; i < _data.length; i++) {
-    if (_data[i] > _data[i -1]) {
+    if (_data[i] > _data[i - 1]) {
       count++;
     }
   }
