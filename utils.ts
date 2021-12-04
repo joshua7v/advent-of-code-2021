@@ -5,3 +5,7 @@ export function getInput() {
   const text = fs.readFileSync(path.resolve(process.cwd(), 'input.txt'), 'utf8');
   return text.trim().split('\n');
 }
+
+export function getRawInput() {
+  return fs.readFileSync(path.resolve(process.cwd(), 'input.txt'), 'utf8');
+}
