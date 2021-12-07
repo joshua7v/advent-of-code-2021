@@ -1,4 +1,4 @@
-import { run } from './days/06/06';
+import { run } from './days/07/07';
 
 function main() {
   const result = run();
